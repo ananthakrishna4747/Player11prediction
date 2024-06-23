@@ -20,6 +20,6 @@ Approach:
         Furthermore, our exploration delved into the intricate relationships between key performance indicators like batsmen runs and innings            played. This comprehensive analysis involved constructing a predictive model trained on fundamental attributes such as innings, run-             scored, balls-faced, opposition, and ground conditions. Rigorous validation processes and meticulous adjustments fortified the         
         reliability of our forecasts, aligning with our primary objective of delivering dependable predictions.
 
-Ensuring transparency and trust in our analyses,. Our paramount aim remains the generation of robust and reliable predictions, empowering fantasy cricket enthusiasts with actionable insights for strategic decision-making.
-This multifaceted approach, augmented by advanced methodologies and rigorous validation, underpins our commitment to delivering trustworthy and insightful predictions, fostering an environment of informed choices in the dynamic realm of fantasy cricket.
-![image](https://github.com/ananthakrishna4747/Player11prediction/assets/81162907/98ebf6c5-2b5e-4e56-9b4d-de0eca0aa118)
+        Ensuring transparency and trust in our analyses,. Our paramount aim remains the generation of robust and reliable predictions,                   empowering fantasy cricket enthusiasts with actionable insights for strategic decision-making.
+        This multifaceted approach, augmented by advanced methodologies and rigorous validation, underpins our commitment to delivering                 trustworthy and insightful predictions, fostering an environment of informed choices in the dynamic realm of fantasy cricket.
+        ![image](https://github.com/ananthakrishna4747/Player11prediction/assets/81162907/98ebf6c5-2b5e-4e56-9b4d-de0eca0aa118)
