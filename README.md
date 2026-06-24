@@ -1,6 +1,6 @@
 # Beyond Cricket — Fantasy XI Player Prediction
 
-![Cricket](docs/cricket-icon.svg)
+![Cricket analytics banner](docs/player11-banner.jpg)
 
 A data-driven recommender for fantasy cricket: given two teams and a ground, predict the 11 best-performing players using historical batting statistics.
 
