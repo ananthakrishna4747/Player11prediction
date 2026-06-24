@@ -4,10 +4,6 @@
 
 A data-driven recommender for fantasy cricket: given two teams and a ground, predict the 11 best-performing players using historical batting statistics.
 
-## Demo
-
-![Player XI demo](docs/player11-demo.gif)
-
 ## What it does
 
 Player performance data — innings played, runs scored, balls faced, boundaries hit — is pulled from Cricinfo and used to train a **Linear Regression** model that predicts expected performance based on opposition and ground conditions. A separate **K-Means clustering** step (with cluster count chosen via the elbow method) groups batsmen into four performance archetypes, helping surface diverse, complementary picks rather than just the highest-scoring names.
@@ -68,6 +64,10 @@ jupyter notebook 5340_final.ipynb
 - [ ] Wrap the trained model behind a small FastAPI/Flask prediction endpoint (currently notebook-only)
 - [ ] Containerize with Docker for a reproducible run environment
 - [ ] GitHub Actions workflow to retrain on newly scraped match data on a schedule
+
+## Demo
+
+![Player XI demo](docs/player11-demo.gif)
 
 ## License
 
