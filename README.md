@@ -1,25 +1,45 @@
-# Player11prediction
-Helps in predicting 11 best performing players from both teams for a given match. 
+# Beyond Cricket — Fantasy XI Player Prediction
 
+A data-driven recommender for fantasy cricket: given two teams and a ground, predict the 11 best-performing players using historical batting statistics.
 
-Project Title:  Beyond Cricket
-Main Problem: 
-        To analyze Batsman performance and create predictive models using historical data to aid in decision-making for fantasy cricket       
-        enthusiasts.
-Objective: 
-      Data and Initial Findings: 
-        For this Analysis, data is collected from the cricinfo website, which provided the variables impacting the performance of the player.            Some of them are Innings played, Runs scored, Balls Faced and 6s and 4s hit. Preliminary assessments indicate a strong positive       
-        relationship between the balls faced and runs scored per game. 
-        
-Approach:
-         In our endeavour to enhance decision-making in fantasy cricket, we harnessed machine learning methodologies, employing Linear     
-         Regression to discern the optimal picks based on opposition and ground dynamics. Additionally, leveraging the K-means Algorithm, we 
-         clustered batsmen data into four distinct groups, a determination made through the insightful Elbow Method. This clustering aided in 
-         identifying nuanced player categories, enhancing our ability to recommend diverse strategies.
-         
-        Furthermore, our exploration delved into the intricate relationships between key performance indicators like batsmen runs and innings            played. This comprehensive analysis involved constructing a predictive model trained on fundamental attributes such as innings, run-             scored, balls-faced, opposition, and ground conditions. Rigorous validation processes and meticulous adjustments fortified the         
-        reliability of our forecasts, aligning with our primary objective of delivering dependable predictions.
+## What it does
 
-        Ensuring transparency and trust in our analyses,. Our paramount aim remains the generation of robust and reliable predictions,                   empowering fantasy cricket enthusiasts with actionable insights for strategic decision-making.
-        This multifaceted approach, augmented by advanced methodologies and rigorous validation, underpins our commitment to delivering                 trustworthy and insightful predictions, fostering an environment of informed choices in the dynamic realm of fantasy cricket.
-        ![image](https://github.com/ananthakrishna4747/Player11prediction/assets/81162907/98ebf6c5-2b5e-4e56-9b4d-de0eca0aa118)
+Player performance data — innings played, runs scored, balls faced, boundaries hit — is pulled from Cricinfo and used to train a **Linear Regression** model that predicts expected performance based on opposition and ground conditions. A separate **K-Means clustering** step (with cluster count chosen via the elbow method) groups batsmen into four performance archetypes, helping surface diverse, complementary picks rather than just the highest-scoring names.
+
+![Pipeline](docs/pipeline.svg)
+
+## Key features
+
+- **Feature set**: innings played, runs scored, balls faced, 4s and 6s hit, opposition, ground
+- **Linear Regression** to estimate expected performance against a specific opposition/ground combination
+- **K-Means clustering** (elbow-method-selected *k*) to identify distinct batsman performance categories
+- **Validation pass** on the regression model to check prediction reliability before recommending a final XI
+
+## Tech stack
+
+`Python` · `pandas` · `scikit-learn (Linear Regression, K-Means)` · `matplotlib`
+
+## Repository structure
+
+```
+Player11prediction/
+├── 5340_final.ipynb       # Full analysis: data prep, regression, clustering
+└── 5340_Final.pptx        # Project presentation
+```
+
+## Setup
+
+```bash
+git clone https://github.com/ananthakrishna4747/Player11prediction.git
+cd Player11prediction
+pip install pandas scikit-learn matplotlib jupyter
+jupyter notebook 5340_final.ipynb
+```
+
+## Sample output
+
+![Cluster output](https://github.com/ananthakrishna4747/Player11prediction/assets/81162907/98ebf6c5-2b5e-4e56-9b4d-de0eca0aa118)
+
+## License
+
+No license file is currently included in this repository — treat as coursework/educational project code.
