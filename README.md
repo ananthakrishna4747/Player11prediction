@@ -1,5 +1,7 @@
 # Beyond Cricket — Fantasy XI Player Prediction
 
+![Cricket](docs/cricket-icon.svg)
+
 A data-driven recommender for fantasy cricket: given two teams and a ground, predict the 11 best-performing players using historical batting statistics.
 
 ## What it does
@@ -56,6 +58,12 @@ jupyter notebook 5340_final.ipynb
 ## Sample output
 
 ![Cluster output](https://github.com/ananthakrishna4747/Player11prediction/assets/81162907/98ebf6c5-2b5e-4e56-9b4d-de0eca0aa118)
+
+## Roadmap
+
+- [ ] Wrap the trained model behind a small FastAPI/Flask prediction endpoint (currently notebook-only)
+- [ ] Containerize with Docker for a reproducible run environment
+- [ ] GitHub Actions workflow to retrain on newly scraped match data on a schedule
 
 ## License
 
