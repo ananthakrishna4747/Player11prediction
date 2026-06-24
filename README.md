@@ -15,6 +15,23 @@ Player performance data — innings played, runs scored, balls faced, boundaries
 - **K-Means clustering** (elbow-method-selected *k*) to identify distinct batsman performance categories
 - **Validation pass** on the regression model to check prediction reliability before recommending a final XI
 
+## User flow
+
+![User flow](docs/userflow.svg)
+
+### Sample output *(illustrative — example formatting, not a live run)*
+
+| Player | Predicted Runs | Archetype Cluster | Recommended? |
+|---|---|---|---|
+| Player A | 64 | Aggressive starter | ✅ |
+| Player B | 41 | Anchor | ✅ |
+| Player C | 22 | Lower-order hitter | — |
+| Player D | 58 | Aggressive starter | ✅ |
+
+## Real-world application
+
+This is the same recommendation pattern behind fantasy-sports optimizers (the category DFS platforms like Dream11/FanDuel sit in): combine a performance-prediction model with a diversity constraint (here, the K-Means archetypes) so the output isn't just "the 11 highest predicted scorers," which tends to be both repetitive and risky. Pairing prediction with clustering is the actual lesson of the project — point estimates alone aren't enough for a selection problem.
+
 ## Tech stack
 
 `Python` · `pandas` · `scikit-learn (Linear Regression, K-Means)` · `matplotlib`
